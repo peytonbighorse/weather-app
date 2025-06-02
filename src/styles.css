@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(234, 252, 207);
+  font-family: "Overpass", sans-serif;
+}
+.weather-app-container {
+  background-color: rgb(246, 252, 237);
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgb(222, 253, 174);
+  border-radius: 20px;
+}
