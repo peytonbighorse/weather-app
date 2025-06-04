@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <script src="src/script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,16 +21,22 @@
           <input
             type="search"
             placeholder="Enter a city"
+            name="city"
             required
             class="search-form-input"
           />
-          <input type="submit" value="Search" class="search-form-btn" />
+          <input
+            type="submit"
+            value="Search"
+            name="subimt-btn"
+            class="search-form-btn"
+          />
         </form>
       </header>
       <main>
         <div class="weather-data">
           <div class="weather-data-left">
-            <h1 class="weather-data-city">Los Angeles</h1>
+            <h1 class="weather-data-city"></h1>
             <p class="weather-data-details">
               Sunday 17:52, clear sky <br />
               Humidity: <strong>49%</strong>, Wind: <strong>3.6m/h</strong>
@@ -38,7 +44,7 @@
           </div>
           <div class="weather-data-right">
             <span class="weather-emoji">🌞</span>
-            <span class="weather-temperature">73</span
+            <span class="weather-temperature"></span
             ><span class="weather-unit">°F</span>
           </div>
         </div>
@@ -52,5 +58,6 @@
         <a href="https://my-she-codes-weather-app.netlify.app">Netlify.</a>
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
