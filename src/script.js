@@ -1,5 +1,4 @@
 function updateWeatherInformation(response) {
-  console.log(response.data);
   //temperature
   let temperature = Math.round(response.data.temperature.current);
   let temperatureElement = document.querySelector(".weather-temperature");
