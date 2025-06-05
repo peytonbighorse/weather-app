@@ -15,6 +15,7 @@ function updateWeatherInformation(response) {
   let weatherCondition = response.data.condition.description;
   let weatherConditionElement = document.querySelector(".weather-condition");
   //condition emoji
+  let conditionEmojiIcon = response.data.condition.icon;
   let conditionEmojiURL = response.data.condition.icon_url;
   let emojiElement = document.querySelector(".weather-emoji");
 
@@ -25,7 +26,7 @@ function updateWeatherInformation(response) {
   let currentWeekDay = getWeekday(fullDate.getDay());
   let hours = fullDate.getHours();
   let minutes = fullDate.getMinutes();
-  let currentDate = `${currentWeekDay} ${hours}:${
+  let currentDate = `${currentWeekDay} ${hours < 10 ? `0${hours}` : hours}:${
     minutes < 10 ? `0${minutes}` : minutes
   }`;
 
@@ -36,7 +37,7 @@ function updateWeatherInformation(response) {
   cityElement.innerHTML = newCity;
   dateElement.innerHTML = currentDate;
   weatherConditionElement.innerHTML = weatherCondition;
-  emojiElement.innerHTML = `<img src="${conditionEmojiURL}" alt="${response.data.condition.icon} emoji">`;
+  emojiElement.innerHTML = `<img src="${conditionEmojiURL}" alt="${conditionEmojiIcon} emoji">`;
 }
 
 function getWeekday(num) {
