@@ -37,7 +37,7 @@ function updateWeatherInformation(response) {
   cityElement.innerHTML = newCity;
   dateElement.innerHTML = currentDate;
   weatherConditionElement.innerHTML = weatherCondition;
-  emojiElement.innerHTML = `<img src="${conditionEmojiURL}" alt="">`;
+  emojiElement.innerHTML = `<img src="${conditionEmojiURL}" alt="${response.data.condition.icon} emoji">`;
 }
 
 function getWeekday(num) {

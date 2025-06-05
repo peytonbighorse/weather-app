@@ -57,11 +57,7 @@ main {
 .weather-data-right {
   display: flex;
 }
-.weather-emoji {
-  font-size: 44px;
-  padding-top: 19px;
-  padding-right: 10px;
-}
+
 .weather-temperature {
   font-size: 88px;
   font-weight: bold;
