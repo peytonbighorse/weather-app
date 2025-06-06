@@ -66,8 +66,32 @@ main {
   font-size: 20px;
   padding-top: 12px;
 }
+.daily-forecast {
+  text-align: center;
+  line-height: 2;
+}
+.forecast-container {
+  padding-top: 20px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.daily-forecast-day {
+  opacity: 0.5;
+}
+.daily-forecast-icon {
+  font-size: 30px;
+}
+.daily-forecast-temps {
+  display: flex;
+  gap: 15px;
+  color: #9ab671;
+}
+.high-temp {
+  font-weight: bolder;
+}
 footer {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   padding-top: 30px;
