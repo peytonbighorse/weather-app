@@ -80,7 +80,10 @@ main {
   opacity: 0.5;
 }
 .daily-forecast-icon {
-  font-size: 30px;
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  max-height: auto;
 }
 .daily-forecast-temps {
   display: flex;
