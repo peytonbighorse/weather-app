@@ -1,4 +1,12 @@
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "aef1757e37906f8atc32b9da5odbc24a";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios.get(apiURL).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastElement = document.querySelector(".forecast-container");
 
   let days = ["Fri", "Sat", "Sun", "Mon", "Tue"];
@@ -18,4 +26,4 @@ function displayForecast() {
   });
   forecastElement.innerHTML = forecastHTML;
 }
-displayForecast();
+getForecast("Los Angeles");
